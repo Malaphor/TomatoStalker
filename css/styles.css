@@ -1,0 +1,200 @@
+body {
+	background: #20262e;
+	color: #ccc;
+	overflow: hidden;
+}
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	opacity: 0;
+	animation: fadeIn 500ms 2500ms forwards;
+}
+#title {
+	margin: 60px 0 0 25%;
+	font-size: 26px;
+}
+#title h1 {
+	float: left;
+	margin-top: 0;
+}
+#batInfo {
+	position: relative;
+	display: inline-block;
+	margin-left: 33%;
+}
+#volts {
+	position: absolute;
+	right: 76px;
+	margin-top: 6px;
+	font-size: 16px;
+}
+#soc {
+	position: absolute;
+	right: 4px;
+	width: 50px;
+	height: 20px;
+	margin: 0;
+	padding-top: 2px;
+	border-radius: 5px;
+	border: 2px solid #CCC;
+	font-size: 16px;
+	text-align: center;
+}
+#batInfo span {
+	position: absolute;
+	right: 0;
+	height: 10px;
+	width: 0;
+	margin-top: 7px;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+}
+#sensorData {
+	max-width: 1300px;
+	margin: 80px auto;
+	padding-left:  8%;
+}
+.col-md-4 {
+	width: 400px;
+	display: inline-block;
+}
+.smChart {
+	position: relative;
+}
+.smLeaf {
+	position: absolute;
+	left: 163px;
+	top: 17px;
+	transform: scale(0.8);
+}
+#drawLogo {
+	z-index: 9999;
+	margin: 10% auto;
+	width: 400px;
+	transform-origin: top left;
+	animation: translateLogo 1000ms ease-in-out 2000ms forwards
+}
+#svgLogo {
+	animation: scaleLogo 1000ms ease-in-out 2000ms forwards
+}
+#stalk1 {
+	stroke-dasharray: 2250;
+	stroke-dashoffset: 2250;
+	fill: transparent;
+	animation: draw 1500ms ease-in-out forwards;
+}
+#stalk2 {
+	stroke-dasharray: 1350;
+	stroke-dashoffset: 1350;
+	fill: transparent;
+	animation: draw 600ms ease-in-out 900ms forwards;
+}
+#leaf1, #leaf2, #leaf3, #leaf4, #leaf5, #leaf6, #leaf7, #leaf8 {
+	opacity: 0;
+}
+#leaf1 {
+	transform-origin: 70% 80%;
+	animation: grow 300ms ease-in-out 1200ms forwards;
+}
+#leaf2 {
+	transform-origin: 20% 70%;
+	animation: grow 300ms ease-in-out 200ms forwards;
+}
+#leaf3 {
+	transform-origin: 70% 10%;
+	animation: grow 300ms ease-in-out 1000ms forwards;
+}
+#leaf4 {
+	transform-origin: 60% 10%;
+	animation: grow 300ms ease-in-out 900ms forwards;
+}
+#leaf5 {
+	transform-origin: 40% 10%;
+	animation: grow 300ms ease-in-out 800ms forwards;
+}
+#leaf6 {
+	transform-origin: 40% 70%;
+	animation: grow 300ms ease-in-out 1200ms forwards;
+}
+#leaf7 {
+	transform-origin: 40% 60%;
+	animation: grow 300ms ease-in-out 900ms forwards;
+}
+#leaf8 {
+	transform-origin: 50% 40%;
+	animation: grow 300ms ease-in-out 1200ms forwards;
+}
+#fruit1, #leftEyes {
+	transform-origin: 30% 50%;
+	opacity: 0;
+	animation: growFruit 500ms ease-in-out 600ms forwards;
+}
+#fruit2, #rightEyes1 {
+	transform-origin: 70% 60%;
+	opacity: 0;
+	animation: growFruit 300ms ease-in-out 1300ms forwards;
+}
+#fruit3, #rightEyes2 {
+	transform-origin: 70% 40%;
+	opacity: 0;
+	animation: growFruit 300ms ease-in-out 1000ms forwards;
+}
+@keyframes scaleLogo {
+	100% {
+		transform: scale(0.15);
+	}
+}
+@keyframes translateLogo {
+	100% {
+		transform: translate(-520px, -430px);;
+	}
+}
+@keyframes draw {
+	100% {
+		stroke-dashoffset: 0;
+		fill: #83B94D;
+	}
+}
+@keyframes grow {
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+@keyframes growFruit {
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.1);
+	}
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@media (max-width: 1300px and min-width: 801px) {
+	#sensorData {
+		padding-left: 16%;
+	}
+}
+@media (max-width: 800px) {
+	#sensorData {
+		padding-left: 10%;
+	}
+}

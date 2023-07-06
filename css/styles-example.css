@@ -1,0 +1,58 @@
+body {
+				background-color: #20262e;
+				color: #ffffff;
+				font-family: "Roboto", Helvetica, Arial, sans-serif;
+				font-size: 16px;
+				line-height: 1.5;
+				padding-bottom: 3.5rem;
+				padding-top: 3.5rem;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 300;
+			}
+
+			hr {
+				border-top: 1px solid #727273;
+				margin-bottom: 2rem;
+				margin-top: 2rem;
+			}
+			
+			#revenue-tag {
+				border-radius: 0px !important;
+				font-size: inherit !important;
+				font-weight: inherit !important;
+			}
+
+			.align-center {
+				text-align: center;
+			}
+
+			.card {
+				background-color: transparent;
+				border: none;
+				margin-bottom: 0px;
+			}
+
+			#sales-doughnut-chart-us, #sales-doughnut-chart-nl, #sales-doughnut-chart-de {
+				height: 280px;
+				margin-top: 1rem;
+				width: 100%;
+			}
+
+			#page-views-spline-area-chart, #orders-spline-area-chart, #revenue-spline-area-chart {
+				height: 100px;
+				width: 100%;
+			}
+
+			#users-doughnut-chart, #users-spline-chart {
+				height: 280px; 
+				margin-top: 2rem;
+				width: 100%;
+			}
+
+			#users-countries-bar-chart {
+				height: 360px; 
+				margin-top: 2rem;
+				width: 100%;
+			}
