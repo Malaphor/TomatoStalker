@@ -12,9 +12,8 @@ There are 2 main software parts to this project, code that runs on the Photon an
 ## Graphics
 
 The intro animation and each of the leaves inside the donut charts are SVG paths made in Illustrator and imported as HTML elements. The tomato plant was animated purely with CSS3 and the leaves in the middle of the donut chart change color depending on soil moisture levels.
-<p align="center">
+
 ![Animated intro](/img/animated-intro.gif)
-</p>
 
 ## Hardware
 
