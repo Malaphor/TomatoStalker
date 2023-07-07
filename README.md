@@ -1,6 +1,8 @@
 # TomatoStalker
 Stalk your tomatoes
 
+![Annotated interface](/img/interface-annotated.png)
+
 ## Overview
 
 This project uses a Wi-Fi enabled microcontroller to keep tabs on soil moisture, temperature and humidity and display that data in a simlle web interface. The MCU I chose is a [Particle Photon](https://docs.particle.io/photon/) with 5 soil moisture sensors, a temperature and humidity sensor, a small battery pack and a small solar panel for charging.
